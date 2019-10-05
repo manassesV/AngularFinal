@@ -13,7 +13,7 @@ import { Alert } from 'selenium-webdriver';
 
 export class LoginPage {
 
-    userForm = new FormGroup({
+   userForm = new FormGroup({
         email: new FormControl('', Validators.required),
         password: new FormControl('', Validators.required),
     });

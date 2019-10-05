@@ -1,12 +1,14 @@
-<div class="container mx-sm-2">
-    <div class="row centered margin">
-        <div class="col-sm-4 col-md-4">
-        </div>
-        <div class="col-sm-4 col-md-4 jumbotron">
-                <h3>Cadastrar<span class="badge badge-secondary"></span></h3>
+<div class="hold-transition login-page">
+        <div class="login-box">
+            <div class="login-logo">
+                <a ><b>ED</b>Gamifica</a>
+            </div>
+            <!-- /.login-logo -->
+            <div class="login-box-body">
+                <p class="login-box-msg">Informe seus dados para o cadastro</p>
             <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email(@):</label>
+                    <p for="exampleInputEmail1">Email(@):</p>
                     <input type="text" name="email" formControlName="email" class="form-control" />
                     <span *ngIf="userForm.controls.email.invalid
                                 && userForm.controls.email.touched" class="text-danger">
@@ -14,19 +16,21 @@
                     </span><br>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Senha:</label>
-                    <input type="password" name="senha" formControlName="password" class="form-control" />
+                    <p for="exampleInputEmail1">Senha:</p>
+                    <input type="password" name="senha" formControlName="password"
+                     class="form-control" value="" />
                     <span *ngIf="userForm.controls.password.invalid
                                 && userForm.controls.password.touched" class="text-danger">
                        Password is required.
                     </span><br>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Confirme Senha:</label>
-                    <input type="password" name="senha" formControlName="passwordConfirm" class="form-control" />
+                    <p for="exampleInputEmail1">Confirme Senha:</p>
+                    <input type="password" name="passwordConfirm" formControlName="passwordConfirm" 
+                    class="form-control" value="" />
                     <span *ngIf="userForm.controls.passwordConfirm.invalid
                                 && userForm.controls.passwordConfirm.touched" class="text-danger">
-                      Password confirme is required.
+                      Password confirm is required.
                     </span><br>
                 </div>
 
@@ -37,9 +41,7 @@
                     <span >Voltar para login</span>
                 </a>
             </form>
+        
         </div>
-        <div class="col-sm-4 col-md-4">
-        </div>
-    </div>
-
+</div>
 </div>

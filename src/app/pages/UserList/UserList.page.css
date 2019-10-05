@@ -1,13 +1,3 @@
-.centered{
-    float: none;
-    display: block;
-    margin: 0 auto;
-}
-
-.userlist{
-    margin-top: 20px!important;
-}
-
-.remove{
-    color: #fff!important;
+.dados{
+    height: 50px;
 }

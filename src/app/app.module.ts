@@ -30,6 +30,8 @@ import { OrderUserPipe } from '../app/components/Pipe/OrderUserPipe';
 import { AuthGuard } from '../app/core/auth.guard';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
+import { APP_BASE_HREF } from '@angular/common';
+
 
 
 
@@ -58,7 +60,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
-    AuthGuard
+    AuthGuard, { provide: APP_BASE_HREF, useValue: '/' }
   ],
   bootstrap: [AppComponent]
 })

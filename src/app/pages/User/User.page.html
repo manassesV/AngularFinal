@@ -1,9 +1,7 @@
 <header-component></header-component>
 <div class="container mx-sm-2">
     <div class="row centered margin">
-        <div class="col-sm-4 col-md-4">
-        </div>
-        <div class="col-sm-4 col-md-4 jumbotron">
+        <div class="col-sm-10 col-md-10 jumbotron">
                 <h3 *ngIf="this.userId != null" >Atualizar Usuário<span class="badge badge-secondary"></span></h3>
                 <h3 *ngIf="this.userId == null" >Criar Usuário<span class="badge badge-secondary"></span></h3>
             <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
@@ -48,8 +46,7 @@
                 </button>
             </form>
         </div>
-        <div class="col-sm-4 col-md-4">
-        </div>
     </div>
 
 </div>
+
