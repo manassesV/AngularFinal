@@ -16,7 +16,7 @@ export class LoginCad {
         email: new FormControl('', Validators.required),
         password: new FormControl(['', Validators.required]),
         passwordConfirm: new FormControl(['', Validators.required])
-    });
+    },this.passwordMatchValidator);
 
     private loading: boolean = false;
 
@@ -30,6 +30,10 @@ export class LoginCad {
 
     }
 
+     passwordMatchValidator(g: FormGroup) {
+        return g.get('password').value === g.get('passwordConfirm').value
+           ? null : {'mismatch': true};
+     }
 
 
 
@@ -45,7 +49,9 @@ export class LoginCad {
                 self.router.navigate(['list']);
             },
             function (dados) {
-                alert("Erro ao cadastrar");
+                console.log(dados);
+
+                alert("Erro ao cadastrar-se");
             });
 
     }

@@ -14,9 +14,11 @@ export class UserPage {
 
     userForm = new FormGroup({
         name: new FormControl('', Validators.required),
-        age: new FormControl('', Validators.required),
+        cpf: new FormControl('', Validators.required),
         email: new FormControl('', [Validators.required, Validators.email]),
-        phone: new FormControl('', [Validators.required]),
+        cep: new FormControl('', [Validators.required]),
+        endereco: new FormControl('', [Validators.required]),
+        complemento: new FormControl('', [Validators.required]),
     });
 
     private loading: boolean = false;

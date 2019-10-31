@@ -11,7 +11,7 @@ export class FilterUserPipe implements PipeTransform {
 			var values = items.filter(function(data) {
                 return data.name.toUpperCase().includes(filter.toUpperCase())
                   || data.email.toUpperCase().includes(filter.toUpperCase()) 
-                  || data.phone.toUpperCase().includes(filter.toUpperCase()) ;
+                  || data.cpf.toUpperCase().includes(filter.toUpperCase()) ;
 			});
 	
 			return values;

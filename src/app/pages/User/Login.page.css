@@ -1,31 +1,47 @@
-body{
-    background-color: aqua!important;
+
+
+
+.test{
+    background-color: black;
 }
 
+.margintop{
+    margin-top: 30px;
+}
 
 .login{
-    color: #fff!important;
-    margin-left: 10px;
+    margin: 20px;
 }
-
-.login-box{
-    background-color: #e9ecef;
-    padding: 10px;
-    border-radius: 4px;
-    
+.marginmenu{
+    margin: 20px;
 
 }
-
-.login-page{
-    background-image: url("../../img/background.png");
-    background-repeat: no-repeat;
-
-}
-
-.buttonleft{
+.edgamifica{
     margin-left: 20px;
+    margin-top: 10px;
 }
 
-label{
-    font-weight: 0;
+.buttonl{
+  background-color: #a7e66e;
+  color:#ffffff;
+}
+
+.img{
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.userlist{
+    margin-top: 20px!important;
+}
+
+.userform{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 40px!important;
 }

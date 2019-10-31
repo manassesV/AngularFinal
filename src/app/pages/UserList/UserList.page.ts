@@ -28,6 +28,7 @@ export class UserListPage{
    }
 
    private get_all() {
+      this.array = [];
       this.userservice.getall().subscribe((data: any) => {
          data.forEach(element => {
             const { doc } = element.payload;
@@ -47,6 +48,7 @@ export class UserListPage{
       var self = this;
        this.userservice.remove(id, function(next){
          self.userservice.getall().subscribe((data: any) => {
+            self.array = [];
             data.forEach(element => {
                const { doc } = element.payload;
                const id = doc.id;

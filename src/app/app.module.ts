@@ -30,9 +30,9 @@ import { OrderUserPipe } from '../app/components/Pipe/OrderUserPipe';
 import { AuthGuard } from '../app/core/auth.guard';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
-import { APP_BASE_HREF } from '@angular/common';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
 
-
+var options: Partial<IConfig> | (() => Partial<IConfig>);
 
 
 @NgModule({
@@ -56,11 +56,12 @@ import { APP_BASE_HREF } from '@angular/common';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgxMaskModule.forRoot(options),
     NgbModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
-    AuthGuard, { provide: APP_BASE_HREF, useValue: '/' }
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
