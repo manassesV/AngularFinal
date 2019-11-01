@@ -11,7 +11,7 @@ Digite npm install para instalar o node_module
 ##Up do projeto
 
 Digite `ng run serve` para começar o projeto.
-Localmente o projeto te leva para seguinte link: calhost:4200
+Localmente o projeto te leva para seguinte link: http://localhost:4200
 
 ## Login
 
