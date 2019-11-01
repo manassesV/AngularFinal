@@ -2,7 +2,7 @@
 # Angular Projeto
 Projeto desenvolvido para disciplina de angular.
 
-link fireahosting: https://educationlm-160e9.firebaseapp.com/
+link firehosting: https://educationlm-160e9.firebaseapp.com/
 
 #Init
 
@@ -10,7 +10,8 @@ Digite npm install para instalar o node_module
 
 ##Up do projeto
 
-digite `ng run serve` para começar o projeto
+Digite `ng run serve` para começar o projeto.
+Localmente o projeto te leva para seguinte link: calhost:4200
 
 ## Login
 
